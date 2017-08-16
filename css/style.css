@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+header {
+  background-color: #fff;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Saira Semi Condensed', Helvetica, Arial, sans-serif;
 }
@@ -16,9 +20,26 @@ p {
   color: #6b7278;
 }
 
+footer {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+footer div h4 {
+  color: #00b3e3;
+}
+
 /*.fa-2x {
 font-size: 1.2em; !important
 }*/
+.menu {
+  background-color: #181a22;
+}
+
+.delivery-options {
+  background-color: #eef0f3;
+  color: #444;
+}
 
 .wrap {
   margin: 0 auto;
@@ -36,22 +57,60 @@ font-size: 1.2em; !important
 }
 
 .example-package {
-  
+  background-image: url(../images/valley-light-10o.svg);
+  background-size: 150% auto;
+  height: auto;
+  width: 100%;
+}
+
+.example-pricing {
+  display: inline-block;
+  width: 58%
+}
+
+.price-table {
+  width: 90%;
+}
+
+.price-table tbody tr td + td {
+  text-align: right;
+}
+
+.example-image {
+  display: inline-block;
+  width: 38%;
+}
+
+.example-image img {
+  width: 100%;
+  height: auto;
 }
 
 .faq {
   display: inline-block;
   max-width: 45%;
   text-align: center;
+  vertical-align: top;
+}
+
+.faq-last {
+  max-width: 100%;
 }
 
 .sitemap {
   display: inline-block;
+  vertical-align: top;
+  width: 18%;
 }
 
 .footer-logo {
   height: 134px;
+  margin: 1.33em 0 0 0;
   width: 130px;
+}
+
+.footer-list {
+  padding: 0;
 }
 
 .footer-list li {
