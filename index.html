@@ -11,24 +11,46 @@
 </head>
 <body>
   <header>
-    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+    <div class="wrap">
+      <a class="header-logo-url" href="https://www.ribblecycles.co.uk">
+        <span><img src="images/logo.svg" alt="Home page" height="47" width="171"></span>
+      </a>
+      <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+    </div>
+
   </header>
   <nav class="menu">
-    <ul class="menu-list">
-      <li><a href="#">Bikes</a></li>
-      <li><a href="#">Components</a></li>
-      <li><a href="#">Accessories</a></li>
-      <li><a href="#">Groupsets</a></li>
-      <li><a href="#">Clothing</a></li>
-      <li><a href="#">Helmets</a></li>
-      <li><a href="#">Triathlon & Swim</a></li>
-      <li><a href="#">Brands</a></li>
-      <li><a href="#">New</a></li>
-      <li class="sale"><a href="#">Sale</a></li>
-    </ul>
+    <div class="wrap">
+      <ul class="menu-list">
+        <li><a href="#">Bikes <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+        <li><a href="#">Components <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+        <li><a href="#">Accessories <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+        <li><a href="#">Groupsets</a></li>
+        <li><a href="#">Clothing <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+        <li><a href="#">Helmets</a></li>
+        <li><a href="#">Triathlon & Swim <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+        <li><a href="#">Brands <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+        <li><a href="#">New</a></li>
+        <li class="sale"><a class="sale" href="#">Sale</a></li>
+      </ul>
+    </div>
+
   </nav>
   <section class="delivery-options">
-    SCROLLBAR GOES HERE
+    <div class="carouselbox">
+    <div class="buttons">
+      <button class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i> <span class="offscreen">Previous</span></button>
+    </div>
+    <ol class="content">
+      <li><a href="https://www.ribblecycles.co.uk/delivery/"><i class="fa fa-truck" aria-hidden="true"></i> Free UK Delivery</a></li>
+      <li><a href="https://www.ribblecycles.co.uk/delivery/"><i class="fa fa-clock-o" aria-hidden="true"></i> Next Day Delivery</a></li>
+      <li><a href="https://www.ribblecycles.co.uk/reserve-collect/"><i class="fa fa-car" aria-hidden="true"></i> Reserve & Collect</a></li>
+      <li><a href="https://www.ribblecycles.co.uk/tax-free-bikes/"><i class="fa fa-scissors" aria-hidden="true"></i> Tax Free Cyclescheme</a></li>
+    </ol>
+    <div class="buttons">
+      <button class="next"><span class="offscreen">Next</span> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+  </div>
   </section>
   <section>
     <img class="hero-image" src="images/2P1A9453.jpg" alt="Ribble Cycles CGR" height="2000" width="3000">
@@ -231,7 +253,7 @@
       <div class="feedback">
         <h4>Feedback</h4>
         <p>We'd love to hear your thoughts on our new website.</p>
-        <a href="#">Share Your Opinion ></a>
+        <a class="rc-button" href="#">Share Your Opinion <i class="fa fa-angle-right"></i></a>
       </div>
 
       <div class="social-media">
@@ -244,5 +266,6 @@
     </div>
 
   </footer>
+  <script src="javascript/carousel.js"></script>
 </body>
 </html>
