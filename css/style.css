@@ -30,17 +30,18 @@ footer div h4 {
 }
 
 .header-logo-url {
-  width: 171px;
-  height: 47px;
+  display: inline-block;
   padding: 10.5px 0 12.5px 10px;
 }
 
 .header-logo {
+  display: inline-block;
+  width: 171px;
+  height: 48px;
   color: transparent;
   font-size: 0;
-  max-width: 100%
+  max-width: 100%;
   vertical-align: top;
-
 }
 
 .menu {
@@ -182,8 +183,8 @@ footer div h4 {
 }
 
 .carouselbox {
-  font-size: 14px;
-  max-width: 300px;
+  font-size: 0.75em;
+  max-width: 320px;
   padding:0 20px;
   height: 40px;
   position: relative;
@@ -218,7 +219,17 @@ footer div h4 {
   z-index:10;
   cursor:pointer;
 }
-.carouselbox button.next{right:0;left:auto;}
+button.prev {
+  background-color: inherit;
+  left: 3px;
+  right: auto;
+}
+
+button.next {
+  background-color: inherit;
+    left: auto;
+  right: 3px;
+}
 
 .active button {
   visibility: visible;
@@ -231,8 +242,6 @@ footer div h4 {
 
 .active .buttons {
   padding: 5px 0;
-  background: #e00;
-  background-color: #e00;
   text-align: center;
 }
 
