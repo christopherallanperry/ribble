@@ -101,7 +101,6 @@ footer div h4 {
 }
 
 .hero {
-  /*clip-path: polygon(0 95%, 100% 79%, 100% 37%, 0% 37%);*/
   margin-top: -355px;
 }
 
@@ -139,6 +138,14 @@ footer div h4 {
 .example-image img {
   width: 100%;
   height: auto;
+}
+
+.image-clip-left {
+  clip-path: polygon(35% 100%, 85% 100%, 85% 35%, 25% 35%);
+}
+
+.image-clip-right {
+  clip-path: polygon(21% 95%, 80% 95%, 70% 14%, 21% 14%);
 }
 
 .faq {
