@@ -48,16 +48,27 @@ footer div h4 {
   background-color: #181a22;
 }
 
+.menu-list {
+  display: table;
+    margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .menu-list li {
   display: table-cell;
   list-style-type: none;
+
 }
 
 .menu-list li a {
   color: #fff;
+  display: inline-block;
+  line-height: 20px;
+  padding: 17px .9vw 17px .8vw;
   text-align: center;
   text-decoration: none;
-  padding: 1.15em .9vw 1.15em .8vw;
+  white-space: nowrap;
 }
 
 .menu-list li a:hover {
@@ -65,12 +76,12 @@ footer div h4 {
 }
 
 .menu-list li a:active {
-  background-color: #00b3e3;
   color: #fff;
 }
 
 .sale {
   background-color: #ab242b;
+  text-align: center;
 }
 
 .sale a:hover {
@@ -89,9 +100,15 @@ footer div h4 {
   max-width: 1280px;
 }
 
+.hero {
+  /*clip-path: polygon(0 95%, 100% 79%, 100% 37%, 0% 37%);*/
+  margin-top: -355px;
+}
+
 .hero-image {
-  width: 100%;
+  clip-path: polygon(0 95%, 100% 79%, 100% 37%, 0% 37%);
   height: auto;
+  width: 100%;
 }
 
 .example-package {
@@ -135,12 +152,48 @@ footer div h4 {
   max-width: 100%;
 }
 
+.newsletter {
+  background-color: #181a22;
+  padding: 10px 15px;
+}
+.email-input-label {
+  display: inline-block;
+  line-height: 38px;
+  padding-top: 2px;
+  width: 39%;
+}
+
+.email-input {
+  background: rgba(32, 45, 57, 1);
+  border-width: 0;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 30% 0 12px;
+  width: 40%;
+}
+
 .rc-button {
   background-color: #00b3e3;
   color: #fff;
+  display: inline-block;
+  float: right;
   height: 30px;
+  line-height: 30px;
+  margin: 8px;
   padding: 0 22.5px;
+  text-align: center;
   text-decoration: none;
+}
+
+.rc-button-email {
+  background-color: #00b3e3;
+  border-width: 0;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 22.5px;
+  text-align: center;
 }
 
 .sitemap {
@@ -211,7 +264,7 @@ footer div h4 {
 }
 
 .carouselbox button {
- position:absolute;
+  position:absolute;
   left:0;
   top:15px;
   border: none;
@@ -227,7 +280,7 @@ button.prev {
 
 button.next {
   background-color: inherit;
-    left: auto;
+  left: auto;
   right: 3px;
 }
 
