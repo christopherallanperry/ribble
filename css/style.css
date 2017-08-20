@@ -44,14 +44,18 @@ footer div h4 {
 /* CLASS DEFINITIONS                       */
 /* +++++++++++++++++++++++++++++++++++++++ */
 
+/* ++++++++++++++++ */
 /* Section Wrappers */
+/* ++++++++++++++++ */
 
 .wrap {
   margin: 0 auto;
   max-width: 1280px;
 }
 
+/* ++++++++++++++++++ */
 /* Header definitions */
+/* ++++++++++++++++++ */
 .header-logo-url {
   display: inline-block;
   padding: 10.5px 0 12.5px 10px;
@@ -104,10 +108,11 @@ footer div h4 {
 .search-button {
   background-color: transparent;
   border-style: none;
-
 }
 
+/* +++++++++++++++ */
 /* Nav Definitions */
+/* +++++++++++++++ */
 .menu {
   background-color: #181a22;
 }
@@ -157,7 +162,9 @@ footer div h4 {
   opacity: 0.8;
 }
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Delivery options section (contains carousel - see defs below) */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .delivery-options {
   background-color: #edeef1;
   color: #444;
@@ -165,7 +172,9 @@ footer div h4 {
   padding: 4px;
 }
 
+/* ++++++++++++++++++ */
 /* Hero image section */
+/* ++++++++++++++++++ */
 .hero {
   margin-top: -355px;
 }
@@ -176,7 +185,9 @@ footer div h4 {
   width: 100%;
 }
 
+/* ++++++++++++++++++++ */
 /* Cycle scheme section */
+/* ++++++++++++++++++++ */
 .scheme {
   margin-bottom: 2em;
 }
@@ -192,13 +203,16 @@ footer div h4 {
   text-decoration: underline;
 }
 
+/* +++++++++++++++++++++++ */
 /* Sample package sections */
+/* +++++++++++++++++++++++ */
 .example-package {
   position: relative;
   background: #000;
   overflow: hidden;
 }
 
+/* Used to set opacity on valley-light background image */
 .example-package:before {
   content: ' ';
   display: block;
@@ -220,6 +234,7 @@ footer div h4 {
   overflow: hidden;
 }
 
+/* Used to set opacity on example package images */
 .cycle-right:before {
   content: ' ';
   display: block;
@@ -240,6 +255,8 @@ footer div h4 {
   position: relative;
   overflow: hidden;
 }
+
+/* Used to set opacity on example package images */
 .cycle-left:before {
   content: ' ';
   display: block;
@@ -285,7 +302,6 @@ footer div h4 {
 }
 
 .view-more {
-  content: " ";
   clear: both;
   text-align: center;
   margin: 25px 0;
@@ -309,7 +325,9 @@ footer div h4 {
   z-index: 20;
 }
 
+/* +++++++++++ */
 /* FAQ section */
+/* +++++++++++ */
 .faqset {
   clear: both;
   display: flex;
@@ -333,7 +351,9 @@ footer div h4 {
   width: 65%;
 }
 
+/* +++++++++++++++++++++ */
 /* Email Sign-up section */
+/* +++++++++++++++++++++ */
 .newsletter {
   background-color: #181a22;
   padding: 10px 15px;
@@ -414,7 +434,9 @@ footer div h4 {
   top: -5px;
 }
 
+/* ++++++++++++++++++ */
 /* Footer Definitions */
+/* ++++++++++++++++++ */
 .sitemap {
   margin: 10px;
   vertical-align: top;
@@ -460,9 +482,9 @@ footer div h4 {
   text-decoration: underline;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* Carousel Styling                                                   */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++ */
+/* Carousel Styling       */
+/* ++++++++++++++++++++++ */
 .buttons, .content {
   display: inline-block;
   vertical-align: top;
