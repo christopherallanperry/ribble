@@ -26,7 +26,7 @@ Download the repo onto your local machine and then open up the `index.html` file
 
 1. Getting the images used for the example packages placed was the hardest part of what's currently presented here. Initially, a `clip-path` was used, but I was unable to find a workable method of getting the parent `<div>` to fit to the visible part of the image. The work shown here is the result of modifying the supplied images with Photoshop and Illustrator.
 2. Making the valley-light background image look correct had me scratching my head for a while. That was eventually solved when I found the trick demonstrated at Ref #2 below.
-3. I did make an attempt at the sub-menu structure, but given time-constraints, it became obvious that I'd be unable to comete it to any degree of satisfaction. I removed the markup I had created, to leave the remaining work looking presentable.
+3. I did make an attempt at the sub-menu structure, but given time-constraints, it became obvious that I'd be unable to comete it to any degree of satisfaction. I removed the markup I had created, to leave the remaining work looking presentable. I'm assuming that this would normally be built out through a CMS, rather than created manually.
 
 ## Feedback
 
