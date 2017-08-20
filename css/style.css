@@ -14,6 +14,9 @@ body {
 
 header {
   background-color: #fff;
+  color: #666;
+  font-size: 0.9em;
+  text-transform: capitalize;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,20 +39,12 @@ footer div h4 {
   color: #00b3e3;
 }
 
-section, .outer-wrap {
-  /* margin-bottom: 3em; */
-}
 
 /* +++++++++++++++++++++++++++++++++++++++ */
 /* CLASS DEFINITIONS                       */
 /* +++++++++++++++++++++++++++++++++++++++ */
 
 /* Section Wrappers */
-.outer-wrap {
-  background-image: url(../images/valley-light-10o.svg);
-  background-size: 120% auto;
-  max-width: 100%;
-}
 
 .wrap {
   margin: 0 auto;
@@ -72,6 +67,46 @@ section, .outer-wrap {
   vertical-align: top;
 }
 
+.header-left, .header-right {
+  display: inline-block;
+}
+
+.header-left {
+  width: 25%;
+}
+
+.header-right {
+  text-align: right;
+  width: 74%;
+}
+
+.header-list li {
+  display: table-cell;
+  line-height: 24px;
+  list-style-type: none;
+  width: 1%;
+}
+
+.header-list li:hover, .header-link a:hover {
+  color: #00b3e3;
+}
+
+.header-link a {
+  color: #666;
+  text-decoration: none;
+}
+
+.search-input {
+  border-style: none;
+  font-size: 1em;
+}
+
+.search-button {
+  background-color: transparent;
+  border-style: none;
+
+}
+
 /* Nav Definitions */
 .menu {
   background-color: #181a22;
@@ -87,13 +122,18 @@ section, .outer-wrap {
 .menu-list li {
   display: table-cell;
   list-style-type: none;
+  width: 1%;
 }
 
-.menu-list li a {
+.level0 > a {
   color: #fff;
-  display: inline-block;
+  display: block;
+  font-family: 'Saira Semi Condensed',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 20px;
   padding: 17px .9vw 17px .8vw;
+  position: relative;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -154,8 +194,66 @@ section, .outer-wrap {
 
 /* Sample package sections */
 .example-package {
-  height: auto;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.example-package:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url(../images/valley-light-10o.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+}
+
+.cycle-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.cycle-right:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 1;
+  background-image: url(../images/ribble1_ai_sml.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cycle-left {
+  position: relative;
+  overflow: hidden;
+}
+.cycle-left:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 1;
+  background-image: url(../images/ribble2_ai_sml.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .example-pricing {
@@ -165,10 +263,20 @@ section, .outer-wrap {
 
 .price-table {
   width: 90%;
+  height: 330px;
 }
 
 .price-table tbody tr td + td {
   text-align: right;
+}
+
+.price-table-right {
+  float: right;
+  margin-left: 10%
+}
+
+.table-right {
+  float: right;
 }
 
 .saving {
@@ -176,28 +284,29 @@ section, .outer-wrap {
   font-weight: bolder;
 }
 
-.example-image {
+.view-more {
+  content: " ";
+  clear: both;
+  text-align: center;
+  margin: 25px 0;
+  padding: 5px 25px;
+  z-index: 20;
+}
+
+.view-more-btn {
+  background-color: #00b3e3;
+  color: #fff;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0%, 5% 0%);
   display: inline-block;
-  width: 40%;
-}
-
-.example-image-right {
-  float: right;
-  display: inline-block;
-  width: 38%;
-}
-
-.example-image img {
-  height: auto;
-  width: 100%;
-}
-
-.image-clip-left {
-  clip-path: polygon(35% 100%, 85% 100%, 85% 35%, 25% 35%);
-}
-
-.image-clip-right {
-  clip-path: polygon(21% 95%, 80% 95%, 70% 14%, 21% 14%);
+  font-family: 'Saira Semi Condensed', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 22.5px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 20;
 }
 
 /* FAQ section */
@@ -206,6 +315,7 @@ section, .outer-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 3em;
 }
 
 .faq {
