@@ -330,14 +330,17 @@ footer div h4 {
 /* +++++++++++ */
 .faqset {
   clear: both;
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;*/
+  text-align: center;
   margin-top: 3em;
 }
 
 .faq {
-  margin: 0 15px 25px 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 15px 25px 15px;
   text-align: center;
   vertical-align: top;
   width: 45%;
@@ -347,7 +350,7 @@ footer div h4 {
   height: 2em;
 }
 
-.faq-last {
+.faq:last-of-type {
   width: 65%;
 }
 
