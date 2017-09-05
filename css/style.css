@@ -329,10 +329,8 @@ footer div h4 {
 /* FAQ section */
 /* +++++++++++ */
 .faqset {
-  clear: both;
-  /*display: flex;
-  flex-wrap: wrap;
-  justify-content: center;*/
+  box-sizing: content-box;
+  /*clear: both;*/
   text-align: center;
   margin-top: 3em;
 }
@@ -343,7 +341,7 @@ footer div h4 {
   padding: 0 15px 25px 15px;
   text-align: center;
   vertical-align: top;
-  width: 45%;
+  width: 49%;
 }
 
 .faq h3 {
